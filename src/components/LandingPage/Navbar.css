@@ -1,0 +1,100 @@
+.Navbar_main_div{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 3px 3px rgb(201, 200, 200);
+    justify-content: space-between;
+}
+.menu-main{
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menu-items{
+    margin-right: 20px;
+}
+
+.Navbar_main_div_phone{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    /* display: flex; */
+    box-shadow: 0px 3px 3px rgb(201, 200, 200);
+    justify-content: space-between;
+}
+.top-heading{
+    height: 40px;
+    width: 100%;
+    background-color: #1976D2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.dropDown{
+    margin: 20px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Set initial opacity to 0 */
+}
+.dropDown.show{
+    opacity: 1;
+}
+.dropDown p{
+    padding: 10px 30px ;
+    font-size: larger;
+    font-weight: bold;
+    color: #1976D2;
+    border-bottom: 1px solid #1976D2;
+}
+.dropDown p:hover{
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Navbar_main_div{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .Navbar_main_div_phone{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .top-heading{
+        font-size: 12px;
+    }
+    .dropDown p{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .top-heading{
+        font-size: 9px;
+        height: 30px;
+    }
+    .dropDown p{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 700px){
+    .Navbar_main_div_phone{
+        height: 120px;
+    }
+    .bottom-heading-logo{
+        width: 120px;
+        height: 80px;
+    }
+    .bottom-heading-menu-img{
+        width: 25px;
+        height: 25px;
+    }
+    .bottom-heading-menu{
+        margin: 15px 30px;
+    }
+}

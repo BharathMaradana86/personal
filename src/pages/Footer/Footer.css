@@ -1,0 +1,21 @@
+.footer-main{
+    background: #50B1BB;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); 
+    height: 500px;
+    width: 100%;
+    padding: 30px;
+    /* From https://css.glass */
+    
+}
+.child-footer{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

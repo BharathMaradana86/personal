@@ -1,0 +1,114 @@
+.Navbar_main_div{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    top:0;
+    left:0;
+    box-shadow: 0px 3px 3px rgb(201, 200, 200);
+    justify-content: space-between;
+    background-color: #ffffff;
+    z-index: 10000000000000;
+}
+.menu-main{
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menu-items{
+    margin-right: 20px;
+}
+
+.Navbar_main_div_phone{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+    /* display: flex; */
+    box-shadow: 0px 3px 3px rgb(201, 200, 200);
+    justify-content: space-between;
+    z-index: 10000000000000;
+}
+.top-heading{
+    height: 40px;
+    width: 100%;
+    background-color: #50B1BB;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.dropDown{
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Set initial opacity to 0 */
+}
+.dropDown.show{
+    opacity: 1;
+    z-index: 100;
+    background-color: white;
+}
+.dropDown p{
+    padding: 10px 30px ;
+    font-size: larger;
+    font-weight: bold;
+    color: #50B1BB;
+    border-bottom: 1px solid #50B1BB;
+}
+.dropDown p:hover{
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Navbar_main_div{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .Navbar_main_div_phone{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .top-heading{
+        font-size: 12px;
+    }
+    .dropDown p{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .top-heading{
+        font-size: 9px;
+        height: 30px;
+    }
+    .dropDown p{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 700px){
+    .Navbar_main_div_phone{
+        height: 120px;
+    }
+    .bottom-heading-logo{
+        width: 120px;
+        height: 80px;
+    }
+    .bottom-heading-menu-img{
+        width: 35px;
+        height: 35px;
+    }
+    .bottom-heading-menu{
+        margin: 15px 30px;
+        align-items: center;
+    }
+}
