@@ -79,7 +79,12 @@ export default function Book() {
       console.log(form.current);  
       emailjs.sendForm('service_fkd4e9g', 'template_3pr635l',form.current , 'jveMW95uvC8XF28Ik')
       .then((result) => {
-          console.log(result.text);
+         alert("Successfully submitted");
+          setFormData({
+            name: "",
+            phoneno: "",
+            date:""
+          })
       }, (error) => {
           console.log(error.text);
       });

@@ -20,7 +20,8 @@ import physio6 from '../../images/Physio_6.png'
 import cardio from '../../images/cardio.jpg'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import Section from '../../pages/Section/Section';
-
+import { Link } from "react-router-dom";
+import Footer from '../../pages/Footer/Footer';
 
 
 const LandingPage = () => {
@@ -33,7 +34,7 @@ const LandingPage = () => {
                                                     <h1>Experience the Best Physiotherapy Services in Hyderabad</h1>
                                                     <p>Ojaskri offers expert physiotherapy services to help you recover from injuries, manage chronic pain, and improve your mobility and function. Our personalized care and effective treatment plans are tailored to meet your individual needs.</p>
                                                     <div className='landingpage_btn'>
-                                                        <Button variant="contained" style={{marginTop:'20px',height:'40px',width:'180px'}}>View All Services</Button>
+                                                      <Link to='/services'><Button variant="contained" style={{marginTop:'20px',height:'40px',width:'220px',fontSize:'15px'}}>View All Services</Button></Link>
                                                     </div>
                                             </div>
                                             <div className='content_2'>
@@ -64,9 +65,9 @@ const LandingPage = () => {
                                     <div className='services_main'>
                                           <div><h1 style={{fontWeight:'1200',fontSize:'50px'}}>Our Services</h1></div> 
                                           <div>
-                                            <Button variant='contained' style={{height:'50px',fontSize:'15px',marginTop:'10px'}}>
+                                          <Link to="/services"> <Button variant='contained' style={{height:'50px',fontSize:'15px',marginTop:'10px'}}>
                                                 View All Services
-                                            </Button>
+                                            </Button></Link>
                                           </div>
                                            
                                     </div>
@@ -352,7 +353,7 @@ const LandingPage = () => {
       <div className='services_main_111' style={{height:'60vh'}}>
         <div className='services_submain_111 image_bg_111 image_bg1_111'>
             <div className='services_left_submain_111' style={{zIndex:'1'}}>
-                <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Heal Your Body</p>
+            <Link to="/book">   <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Heal Your Body</p></Link> 
                 <p style={{fontSize:'22px',color:'#ffffff'}}>Get expert physiotherapy treatments to relieve pain and improve mobility.</p>
                 <button className='services_left_submain_btn_111' style={{backgroundColor:'#71eee8',color:'#001615'}}>Book Now</button>
             </div>
@@ -377,35 +378,7 @@ const LandingPage = () => {
                                                     </div></div>
                                           
                      </div>    
-                     <footer className="footer">
-    <div className="waves">
-      <div className="wave" id="wave1"></div>
-      <div className="wave" id="wave2"></div>
-      <div className="wave" id="wave3"></div>
-      <div className="wave" id="wave4"></div>
-    </div>
-    <ul className="social-icon">
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a></li>
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a></li>
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <ul className="menu">
-      <li className="menu__item"><a href=''><p>PRIVACY POLICY</p></a></li>
-      <li className="menu__item"><a href=''><p>WHY US?</p></a></li>
-      <li className="menu__item"><a href=''><p>SCHEDULE APPOINTMENT</p></a></li>
-     
-    </ul>
-    <p>&copy;Copyright 2021 by Ojas-kri. All rights reserved. Powered by YSB.</p>
-  </footer>
+                   <Footer/>
         </div></>
     );
 }

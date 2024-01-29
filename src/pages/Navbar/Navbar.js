@@ -16,7 +16,7 @@ const Navbar=()=>{
                     <div className="menu-main">
                         <Link to='/'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'100px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>HOME</b></Button></Link>
                         <Link to='/services'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'100px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>SERVICES</b></Button></Link>
-                        <Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>ABOUT US</b></Button>
+                      <Link to='/About'> <Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>ABOUT US</b></Button></Link>
                         <Link to='/contact'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>CONTACT US</b></Button></Link>
                     </div>
 

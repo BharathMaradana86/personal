@@ -5,7 +5,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer';
-
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const width = window.innerWidth <1000
@@ -67,6 +67,26 @@ export default function Contact() {
           name:nameField,
           email:email,
         }
+        alert("Successfully submitted");
+          setFormData({
+            name: "",
+        email: ""
+          })
+          emailjs.sendForm('service_fkd4e9g', 'template_3pr635l',form.current , 'jveMW95uvC8XF28Ik')
+          .then((result) => {
+             alert("Successfully submitted");
+              setFormData({
+                name: "",
+                phoneno: "",
+                date:""
+              })
+          }, (error) => {
+              console.log(error.text);
+          });
+          setMessage("");
+          setNameField("");
+          setEmail("");
+          setSubject("");
         console.log(data)
       }
     }
