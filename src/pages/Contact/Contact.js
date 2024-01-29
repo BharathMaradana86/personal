@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import './Contact.css'
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const form  = useRef();
     const width = window.innerWidth <1000
 
     const [formData, setFormData] = useState({
@@ -138,7 +139,7 @@ export default function Contact() {
         </div>
         <div className='contact_submain' style={{backgroundColor:'#eff4f8',paddingTop:'50px'}}>
             <p className='contact_right_para'>GET IN TOUCH</p>
-            <form className='contact_form' onSubmit={contact_form_submit}>
+            <form className='contact_form'  ref={form} onSubmit={contact_form_submit}>
                 <div className='contact_form_input'>
                     <p style={{fontSize:'18px'}}>Name <span style={{color:'red'}}>*</span></p>
                     <input type='text' className='contact_form_input_field' placeholder='Enter your Name' value={nameField} onChange={handleNameField}/>
