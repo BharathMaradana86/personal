@@ -22,6 +22,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import Section from '../../pages/Section/Section';
 import { Link } from "react-router-dom";
 import Footer from '../../pages/Footer/Footer';
+import human from '../../images/human.jpg'
 
 
 const LandingPage = () => {
@@ -304,7 +305,7 @@ const LandingPage = () => {
                                                     Excellent Doctors with friendly nature which gave us freedom to share everything !!!
                                                    </p>
                                                 <div className="user">
-                                                    <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" className="user-image" />
+                                                    <img src={human} alt="user" className="user-image" />
                                                     <div className="user-details">
                                                     <h4 className="username">Manish</h4>
                                                     <p className="role">Software Employee</p>
