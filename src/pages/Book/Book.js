@@ -2,7 +2,7 @@ import React,{useState,useEffect,useRef} from 'react'
 import './Book.css'
 // import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import Navbar from '../Navbar/Navbar'
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 export default function Book() {
    const form = useRef();
@@ -77,7 +77,7 @@ export default function Book() {
         }
         console.log(data)
       console.log(form.current);  
-      emailjs.sendForm('service_fkd4e9g', 'template_3pr635l',form.current , 'jveMW95uvC8XF28Ik')
+      emailjs.send('service_fkd4e9g', 'template_3pr635l',data , 'jveMW95uvC8XF28Ik')
       .then((result) => {
          alert("Successfully submitted");
           setFormData({
@@ -88,8 +88,11 @@ export default function Book() {
       }, (error) => {
           console.log(error.text);
       });
+     setNameField("");
+     setPhoneNo("");
+     setPhoneNo("");
+     setType("");
     }
-
     useEffect(() => {
         // Include the AddToAny script after the component mounts
         const script = document.createElement('script');
@@ -146,8 +149,15 @@ export default function Book() {
                     <p>Select Service</p>
                     <select name="type" id="type"  className='book_form_input' value={type} onChange={handleType}>
                         <option value="1">Sports Injury Rehabilitaion</option>
-                        <option value="2">Pain Management</option>
-                        <option value="3">Post Operative Care</option>
+                        <option value="2">Orthopedic Rehabilitaion</option>
+                        <option value="3">Neurological Rehabilitaion</option>
+                        <option value="4">Cardiopulmonary Rehabilitaion</option>
+                        <option value="5">Sports Medicine</option>
+                        <option value="6">Pain Management</option>
+                        <option value="7">Geriatric Rehabilitaion</option>
+                        <option value="8">Women's Health Rehabilitaion</option>
+                        <option value="9">Hand Theraphy</option>
+                        <option value="310">Orthopedic Rehabilitaion</option>
                     </select>
                 </div>
                 <div className='book_form_fields'>

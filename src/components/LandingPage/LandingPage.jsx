@@ -34,7 +34,7 @@ const LandingPage = () => {
                                                     <h1>Experience the Best Physiotherapy Services in Hyderabad</h1>
                                                     <p>Ojaskri offers expert physiotherapy services to help you recover from injuries, manage chronic pain, and improve your mobility and function. Our personalized care and effective treatment plans are tailored to meet your individual needs.</p>
                                                     <div className='landingpage_btn'>
-                                                      <Link to='/services'><Button variant="contained" style={{marginTop:'20px',height:'40px',width:'220px',fontSize:'15px'}}>View All Services</Button></Link>
+                                                      <Link to='/services'><Button  variant="contained" style={{marginTop:'20px',height:'60px',width:'220px',fontSize:'15px'}}><b>View All Services</b></Button></Link>
                                                     </div>
                                             </div>
                                             <div className='content_2'>
@@ -46,7 +46,7 @@ const LandingPage = () => {
                     <div className='landingPage_2'>
                                             <div className='landingPage_background'>
                                                         <div className='clinic_1'>
-                                                                <img src={physio} style={{height:'400px',width:'80%'}}/>
+                                                                <img src={physio} style={{height:'400px',width:'80%',marginTop:'100px',borderRadius:'10px'}}/>
                                                         </div>
                                                     <div className='clinic_2'>
                                                         <div className='clinic_3'>
@@ -64,9 +64,9 @@ const LandingPage = () => {
                         <div className='landingPage_head'>
                                     <div className='services_main'>
                                           <div><h1 style={{fontWeight:'1200',fontSize:'50px'}}>Our Services</h1></div> 
-                                          <div>
-                                          <Link to="/services"> <Button variant='contained' style={{height:'50px',fontSize:'15px',marginTop:'10px'}}>
-                                                View All Services
+                                          <div className='all-services-button-1'>
+                                          <Link to="/services"> <Button  variant='contained' style={{width:'200px',height:'60px',fontSize:'15px',marginTop:'10px'}}>
+                                                <b>View All Services</b>
                                             </Button></Link>
                                           </div>
                                            
@@ -162,6 +162,12 @@ const LandingPage = () => {
                                         </div>
                                     </div>
 
+                                    <div className='all-services-button-2'>
+                                          <Link to="/services"> <Button  variant='contained' style={{width:'200px',height:'60px',fontSize:'15px',marginTop:'10px'}}>
+                                                <b>View All Services</b>
+                                            </Button></Link>
+                                    </div>
+
                         </div>
                      </div>
                      <div className='landingPage_4' >
@@ -197,7 +203,7 @@ const LandingPage = () => {
                                                                 </ul>
                                                             </div>   
                                                             <div className='feature_points'>
-                                                                <h3>Features</h3>
+                                                                <h3>Benefits</h3>
                                                                 <ul>
                                                                 <li>
                                                                     <input type='radio' id='feature3' name='feature18' checked/>
@@ -350,12 +356,12 @@ const LandingPage = () => {
                                         </div>
                      </div>
                      <div>
-      <div className='services_main_111' style={{height:'60vh'}}>
-        <div className='services_submain_111 image_bg_111 image_bg1_111'>
-            <div className='services_left_submain_111' style={{zIndex:'1'}}>
+      <div className='services_main_111_1' style={{height:'40vh !important'}}>
+        <div className='services_submain_111_1 image_bg_111_1 image_bg1_111_1' style={{height:'40vh !important'}}>
+            <div className='services_left_submain_111_1' style={{zIndex:'1'}}>
             <Link to="/book">   <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Heal Your Body</p></Link> 
                 <p style={{fontSize:'22px',color:'#ffffff'}}>Get expert physiotherapy treatments to relieve pain and improve mobility.</p>
-                <button className='services_left_submain_btn_111' style={{backgroundColor:'#71eee8',color:'#001615'}}>Book Now</button>
+                <button className='services_left_submain_btn_111_1' style={{backgroundColor:'#71eee8',color:'#001615'}}>Book Now</button>
             </div>
         </div>
       </div>

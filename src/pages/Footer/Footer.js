@@ -12,7 +12,7 @@ const Footer=()=>{
                 <div className="footer-about-div">
                     <b>ABOUT US</b>
 
-                    <p>Welcome to OJAS-KRI Physio and Rehab Center, where evidence-based expertise fuels your journey to wellness.Our clinic blends advanced research with personalized care, ensuring your rehabilitation is rooted in proven methodologies <Link to='/aboutus' style={{color:'#50B1BB',display:'inline'}}>Read more....</Link></p>
+                    <p>Welcome to OJAS-KRI Physio and Rehab Center, where evidence-based expertise fuels your journey to wellness.Our clinic blends advanced research with personalized care, ensuring your rehabilitation is rooted in proven methodologies <Link to='/About' style={{color:'#50B1BB',display:'inline'}}>Read more....</Link></p>
                 </div>
                 <div className="footer-follow-div">
                     <b>FOLLOW US</b><br/><br/>
@@ -28,11 +28,11 @@ const Footer=()=>{
                     <p >Copyright © 2024 OJAS-KRI PHYSIO CENTRE All Rights Reserved</p>
                 </div>
                 <div>
-                    <p style={{marginRight:'15px'}}>About Us</p>
+                  <Link to="/About">  <p style={{marginRight:'15px'}}>About Us</p></Link>
                     <p style={{marginRight:'15px'}}>Terms & Conditions</p>
                     <p style={{marginRight:'15px'}}>Privacy Policy</p>
-                    <p style={{marginRight:'15px'}}>Contact Us</p>
-                    <p>Book An Appointment</p>
+                 <Link to="/contact" >  <p style={{marginRight:'15px'}}>Contact Us</p></Link>
+                 <Link to="/book">   <p>Book An Appointment</p></Link>
                 </div>
                 <div><p>Developed By @YSB-SOLUTIONS</p></div>
             </div>

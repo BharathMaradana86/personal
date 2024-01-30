@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
             Your well-being is our evidence, and we're dedicated to guiding you towards a healthier, stronger future.<span style={{fontSize:'25px'}}>❞</span></p>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

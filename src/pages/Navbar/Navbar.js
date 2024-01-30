@@ -34,10 +34,10 @@ const Navbar=()=>{
                     <div className="bottom-heading-menu" style={{margin:'15px 20px'}}><img className="bottom-heading-menu-img" onClick={()=>setMenuOpen(true)} src="/menu-button.png" width="30px" height="30px" style={{padding:'7px 7px',border:'2px solid #50B1BB',borderRadius:'5px',display:menuOpen?'none':'block'}}/><img className="bottom-heading-menu-img" onClick={()=>setMenuOpen(false)} src="/close.png" width="30px" height="30px" style={{padding:'7px 7px',border:'2px solid #50B1BB',borderRadius:'5px',display:menuOpen?'block':'none'}}/> </div>
                 </div>
                 <div className={`dropDown ${menuOpen ? 'show' : ''}`} onClick={()=>setMenuOpen(false)} style={{zIndex:'10'}}>
-                    <p>HOME</p>
-                    <p>SERVICES</p>
-                    <p>ABOUT US</p>
-                    <p>CONTACT US</p>
+                    <Link to='/'><p>HOME</p></Link>
+                    <Link to='/services'><p>SERVICES</p></Link>
+                    <Link to='/About'><p>ABOUT US</p></Link>
+                    <Link to='/contact'><p>CONTACT US</p></Link>
                 </div>
             </div>
 

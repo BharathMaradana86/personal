@@ -70,7 +70,9 @@
 @media screen and (max-width:1600px) and (min-width:1350px) {
     .services_list_member_111{
         width: 28%;
+        
     }
+
 }
 
 @media screen and (max-width:1350px) and (min-width:1155px){

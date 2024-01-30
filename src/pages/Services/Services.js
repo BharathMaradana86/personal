@@ -13,6 +13,7 @@ import physio_10 from '../../images/physio_10.jpg'
 import physio_11 from '../../images/physio_11.jpg'
 import ServicesItem from '../../components/Services_Item/Services_item'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 export default function Services() {
 
@@ -90,6 +91,7 @@ export default function Services() {
         }
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
