@@ -15,6 +15,7 @@
     flex-direction: column;
     gap: 80px;
     align-items: center;
+   
     /* justify-content: center; */
 }
 
@@ -32,7 +33,7 @@
     border-end-end-radius: 20px;
     border-end-start-radius: 5px;
     border-start-end-radius: 5px;
-    z-index: 0;
+    z-index: 100;
 }
 
 @media screen and (max-width:1000px) {

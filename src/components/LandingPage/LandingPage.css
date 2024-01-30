@@ -598,6 +598,7 @@ li {
   width: 100%;
   height: 60vh;
   margin-top: 10vh;
+  z-index: 100;
 }
 
 .services_submain_111_1{
@@ -615,6 +616,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 .services_left_submain_111{
@@ -622,6 +624,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  z-index: 100;
 }
 
 .services_left_submain_btn_111_1{
@@ -633,6 +636,7 @@ li {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .services_submain_para_111_1{

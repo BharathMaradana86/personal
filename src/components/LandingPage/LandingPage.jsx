@@ -360,9 +360,9 @@ const LandingPage = () => {
       <div className='services_main_111_1' style={{height:'40vh !important'}}>
         <div className='services_submain_111_1 image_bg_111_1 image_bg1_111_1' style={{height:'40vh !important'}}>
             <div className='services_left_submain_111_1' style={{zIndex:'1'}}>
-            <Link to="/book">   <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Heal Your Body</p></Link> 
+           <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Heal Your Body</p>
                 <p style={{fontSize:'22px',color:'#ffffff'}}>Get expert physiotherapy treatments to relieve pain and improve mobility.</p>
-                <button className='services_left_submain_btn_111_1' style={{backgroundColor:'#71eee8',color:'#001615'}}>Book Now</button>
+                <Link to="/book">     <button className='services_left_submain_btn_111_1' style={{backgroundColor:'#71eee8',color:'#001615'}}>Book Now</button></Link>
             </div>
         </div>
       </div>
