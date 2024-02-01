@@ -98,3 +98,40 @@
         width: 100%;
     }
 }
+
+.services-heading{
+    font-size: 42px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.our_services_heading{
+    font-weight:bold;
+    font-size:24px;
+    color:#ffffff;
+    text-align:center;
+}
+
+.services-para-heading{
+    font-size:22px;
+    color:#ffffff
+}
+
+@media screen and (max-width: 400px){
+    .services-heading{
+        font-size: 25px;
+    }
+    .services_left_submain_btn_111{
+        width: 200px;
+        font-size: 12px;
+    }
+    .services_submain_para_111{
+        padding: 15px;
+    }
+    .our_services_heading{
+        font-size:18px;
+    }
+    .services-para-heading{
+        font-size:16px;
+    }
+}

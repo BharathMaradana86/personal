@@ -74,16 +74,16 @@ export default function Services() {
       <Navbar/>
       <div className='services_submain_111 image_bg_111'>
         <div className='services_left_submain_111'>
-          <p style={{fontSize:'42px',fontWeight:'bold',color:'#ffffff'}}>Recover with Expert Physiotherapy</p>
-          <p style={{fontSize:'22px',color:'#ffffff'}}>Get personalized care to restore your mobility and strength.</p>
+          <p className='services-heading'>Recover with Expert Physiotherapy</p>
+          <p className='services-para-heading'>Get personalized care to restore your mobility and strength.</p>
           <Link to='/book'><button className='services_left_submain_btn_111'>Book an Appointment Now</button></Link>
         </div>
       </div>
       <div className='services_submain_111' style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
         <div className='services_submain_para_111'>
-          <p style={{fontWeight:'bold',fontSize:'24px',color:'#ffffff',textAlign:'center'}}>Our Services</p>
+          <p className='our_services_heading'>Our Services</p>
         </div>
-        <div className='services_list_111'>
+        <div className='services_list_111' style={{justifyContent:'center'}}>
           {data.map((value) =>{ return (
           <ServicesItem image={value.image} heading={value.heading} text={value.text}/>
           )

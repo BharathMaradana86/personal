@@ -68,7 +68,7 @@ export default function Book() {
       const book_form_submit = (event) =>{
         event.preventDefault();
         let test = validateForm();
-      
+      if(test){
         const data= {
           name:nameField,
           phoneno:phoneNo,
@@ -93,6 +93,7 @@ export default function Book() {
      setPhoneNo("");
      setType("");
     }
+  }
     useEffect(() => {
         // Include the AddToAny script after the component mounts
         const script = document.createElement('script');
@@ -168,11 +169,11 @@ export default function Book() {
                 <button type='submit' className='book_btn'>BOOK APPOINTMENT NOW</button>
             </form>
         </div>
-        <div className="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style a2a_follow" style={{ right: '0px', top: '310px', background: 'transparent' }}>
-        <a className="a2a_button_instagram" href="https://www.instagram.com/supriya_pudipeddi/"></a>
-        <a className="a2a_button_email" href="mailto:saisupriyapudipeddi@gmail.com"></a>
-        <a className="a2a_button_linkedin" href="https://www.linkedin.com/in/supriya-pudipeddi-5068071ba/"></a>
-        <a className="a2a_button_github" href="https://github.com/Supriya-1432"></a>
+        <div className="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style a2a_follow" style={{ right: '0px', top: '390px', background: 'transparent' }}>
+        <a className="a2a_button_instagram" ></a>
+        <a className="a2a_button_email" ></a>
+        <a className="a2a_button_facebook" ></a>
+        <a className="a2a_button_youtube" ></a>
       </div>
       {/* <ArrowCircleUpIcon className='bottom_icon' style={{ position: 'fixed',
                                                           bottom: '0',

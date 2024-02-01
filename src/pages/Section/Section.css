@@ -13,3 +13,52 @@
     background: linear-gradient(rgba(85, 92, 120, 0.5), rgba(85, 92, 120, 0.5)); /* Adjust the color and opacity as needed */
   }
   
+  .section_main_111{
+    overflow-x: hidden;
+    /* background-image: url('../../images/physio_1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center; */
+    width: 100%;
+    margin-top: 30px;
+}
+
+.section_submain_111{
+    padding: 50px;
+}
+
+
+.section_left_submain_111{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-heading{
+    font-size: 42px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.section_left_submain_btn_111{
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    background: #50b1bb;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 300px){
+    .section-heading{
+        font-size: 35px;
+    }
+    .section_left_submain_btn_111{
+        width: 200px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,197 @@
+/* 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mySwiper{
+    height: 600px;
+  }
+  
+  .swiper-div{
+    background-color: #15b6e3;
+    margin: 100px 250px;
+  }
+   */
+
+
+
+
+.swiper_container {
+    width: 70%;
+  height: 400px;
+  position: relative;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .swiper_container{
+        width: 100%;
+    }
+}
+
+
+
+/* 
+@media screen and  (max-width:300px) {
+    .swiper_container{
+        height: 900px;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+}
+
+@media screen and  (max-width:400px) {
+    .swiper_container{
+        height: 800px;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+}
+
+@media screen and  (max-width:500px) {
+    .swiper_container{
+        height: 700px;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+}
+
+
+*/
+
+@media screen and (max-width:260px) {
+    .swiper_container{
+        height: 850px !important;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+} 
+
+@media screen and (min-width:260px) and (max-width:330px) {
+    .swiper_container{
+        height: 750px !important;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+} 
+
+@media screen and (min-width:330px) and (max-width:400px) {
+    .swiper_container{
+        height: 650px !important;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+} 
+
+@media screen and (min-width:400px) and (max-width:450px) {
+    .swiper_container{
+        height: 540px !important;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+} 
+
+@media screen and (min-width:451px) and (max-width:900px) {
+    .swiper_container{
+        height: 500px !important;
+    }
+    .swiper_slide_content{
+        width: 100% !important;
+    }
+}
+
+
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+  position: relative;
+background: url('../../images/physio_slider_bg.jpg');
+/* opacity: 0.5; */
+background-size: cover; 
+background-repeat: no-repeat;
+background-position: center center;
+border-radius: 20px;
+
+}
+
+.swiper_slide_content{
+    width: 80%;
+    height: 100%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.swiper_slide_content_stars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.swiper_slide_content_star{
+    font-size: 36px;
+    color: yellow;
+}
+
+.swiper_slide_content_text{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.swiper_slide_content_name{
+    font-size: 20px;
+    font-weight: 1000;
+    color: #f83292;
+}
+
+
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.8; 
+  }
+  
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+
+.swiper-pagination {
+  width: max-content;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet{
+    background:#ffffff;
+}

@@ -10,6 +10,11 @@
     height: 90vh;
 }
 
+@media screen and (max-width:1700px) {
+    .book_main{
+        height: 100%;
+    }
+}
 
 .book_submain{
     display: flex;
