@@ -29,8 +29,8 @@ const Footer=()=>{
                 </div>
                 <div>
                   <Link to="/About">  <p style={{marginRight:'15px'}}>About Us</p></Link>
-                    <p style={{marginRight:'15px'}}>Terms & Conditions</p>
-                    <p style={{marginRight:'15px'}}>Privacy Policy</p>
+                  <Link to="/contact" >     <p style={{marginRight:'15px'}}>Terms & Conditions</p></Link>
+                    <Link to="/Privacy-policy" >    <p style={{marginRight:'15px'}}>Privacy Policy</p></Link>
                  <Link to="/contact" >  <p style={{marginRight:'15px'}}>Contact Us</p></Link>
                  <Link to="/book">   <p>Book An Appointment</p></Link>
                 </div>

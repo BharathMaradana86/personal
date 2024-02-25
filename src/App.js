@@ -5,6 +5,7 @@ import Contact from './pages/Contact/Contact'
 import LandingPage from './components/LandingPage/LandingPage'
 import Services from './pages/Services/Services'
 import About from './pages/About/About'
+import Privacy from './pages/PrivacyPolicy/Privacy'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/About' element={<About/>}/>
+          <Route path='/Privacy-policy' element={<Privacy/>}/>
         </Routes>
     </div>
   )

@@ -24,7 +24,7 @@ export default function Book() {
         setPhoneNo(event.target.value)
       }
 
-      const [type,setType] = useState('1')
+      const [type,setType] = useState('Injury Rehabilitation')
       const handleType = (event) =>{
         setType(event.target.value)
       }
@@ -77,7 +77,7 @@ export default function Book() {
         }
         console.log(data)
       console.log(form.current);  
-      emailjs.send('service_fkd4e9g', 'template_3pr635l',data , 'jveMW95uvC8XF28Ik')
+      emailjs.send('service_1as6muc', 'template_yrykvbr',data , 'YLAPKW4NJqb_vqiEY')
       .then((result) => {
          alert("Successfully submitted");
           setFormData({
@@ -90,7 +90,7 @@ export default function Book() {
       });
      setNameField("");
      setPhoneNo("");
-     setPhoneNo("");
+     setDate("");
      setType("");
     }
   }
@@ -149,16 +149,16 @@ export default function Book() {
                 <div className='book_form_fields'>
                     <p>Select Service</p>
                     <select name="type" id="type"  className='book_form_input' value={type} onChange={handleType}>
-                        <option value="1">Sports Injury Rehabilitaion</option>
-                        <option value="2">Orthopedic Rehabilitaion</option>
-                        <option value="3">Neurological Rehabilitaion</option>
-                        <option value="4">Cardiopulmonary Rehabilitaion</option>
-                        <option value="5">Sports Medicine</option>
-                        <option value="6">Pain Management</option>
-                        <option value="7">Geriatric Rehabilitaion</option>
-                        <option value="8">Women's Health Rehabilitaion</option>
-                        <option value="9">Hand Theraphy</option>
-                        <option value="310">Orthopedic Rehabilitaion</option>
+                        <option value="Sports Injury Rehabilitaion">Sports Injury Rehabilitaion</option>
+                        <option value="Orthopedic Rehabilitaion">Orthopedic Rehabilitaion</option>
+                        <option value="Neurological Rehabilitaion">Neurological Rehabilitaion</option>
+                        <option value="Cardiopulmonary Rehabilitaion">Cardiopulmonary Rehabilitaion</option>
+                        <option value="Sports Medicine">Sports Medicine</option>
+                        <option value="Pain Management">Pain Management</option>
+                        <option value="Geriatric Rehabilitaion">Geriatric Rehabilitaion</option>
+                        <option value="omen's Health Rehabilitaion">Women's Health Rehabilitaion</option>
+                        <option value="Hand Theraphy">Hand Theraphy</option>
+                        <option value="Orthopedic Rehabilitaion">Orthopedic Rehabilitaion</option>
                     </select>
                 </div>
                 <div className='book_form_fields'>

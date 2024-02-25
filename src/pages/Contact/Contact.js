@@ -5,7 +5,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
     const form  = useRef();
@@ -71,19 +71,19 @@ export default function Contact() {
         alert("Successfully submitted");
           setFormData({
             name: "",
-        email: ""
+            email: ""
           })
-          emailjs.sendForm('service_fkd4e9g', 'template_3pr635l',form.current , 'jveMW95uvC8XF28Ik')
-          .then((result) => {
-             alert("Successfully submitted");
-              setFormData({
-                name: "",
-                phoneno: "",
-                date:""
-              })
-          }, (error) => {
-              console.log(error.text);
-          });
+          emailjs.send('service_1as6muc', 'template_yc7ri8j',data , 'YLAPKW4NJqb_vqiEY')
+      .then((result) => {
+         alert("Successfully submitted");
+          setFormData({
+            name: "",
+            phoneno: "",
+            date:""
+          })
+      }, (error) => {
+          console.log(error.text);
+      });
           setMessage("");
           setNameField("");
           setEmail("");
