@@ -28,11 +28,11 @@ const Footer=()=>{
                     <p >Copyright © 2024 OJAS-KRI PHYSIO CENTRE All Rights Reserved</p>
                 </div>
                 <div>
-                  <Link to="/About">  <p style={{marginRight:'15px'}}>About Us</p></Link>
-                  <Link to="/contact" >     <p style={{marginRight:'15px'}}>Terms & Conditions</p></Link>
-                    <Link to="/Privacy-policy" >    <p style={{marginRight:'15px'}}>Privacy Policy</p></Link>
-                 <Link to="/contact" >  <p style={{marginRight:'15px'}}>Contact Us</p></Link>
-                 <Link to="/book">   <p>Book An Appointment</p></Link>
+                  <Link to="/About"><p style={{marginRight:'15px'}}>About Us</p></Link>
+                  <Link to="/tc" ><p style={{marginRight:'15px'}}>Terms & Conditions</p></Link>
+                  <Link to="/pp" ><p style={{marginRight:'15px'}}>Privacy Policy</p></Link>
+                  <Link to="/contact" ><p style={{marginRight:'15px'}}>Contact Us</p></Link>
+                  <Link to="/book"><p>Book An Appointment</p></Link>
                 </div>
                 <div><p>Developed By @YSB-SOLUTIONS</p></div>
             </div>

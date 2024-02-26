@@ -5,7 +5,9 @@ import Contact from './pages/Contact/Contact'
 import LandingPage from './components/LandingPage/LandingPage'
 import Services from './pages/Services/Services'
 import About from './pages/About/About'
-import Privacy from './pages/PrivacyPolicy/Privacy'
+// import Privacy from './pages/PrivacyPolicy/Privacy'
+import TC from './pages/TC/TC'
+import PP from './pages/PP/PP'
 
 export default function App() {
   return (
@@ -16,7 +18,9 @@ export default function App() {
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/About' element={<About/>}/>
-          <Route path='/Privacy-policy' element={<Privacy/>}/>
+          {/* <Route path='/Privacy-policy' element={<Privacy/>}/> */}
+          <Route path='/pp' element={<PP/>}/>
+          <Route path='/tc' element={<TC/>}/>
         </Routes>
     </div>
   )

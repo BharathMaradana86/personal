@@ -3,6 +3,7 @@ import './Book.css'
 // import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import Navbar from '../Navbar/Navbar'
 import emailjs from 'emailjs-com';
+import { Link } from 'react-router-dom';
 
 export default function Book() {
    const form = useRef();
@@ -167,6 +168,7 @@ export default function Book() {
                     {formData.date? <p style={{color:'red'}}>{formData.date}</p> : <></>}
                 </div>
                 <button type='submit' className='book_btn'>BOOK APPOINTMENT NOW</button>
+                <Link to='/tc' style={{fontSize:'16px',textDecoration:'underline',width:'max-content'}}>TERMS & CONDITIONS </Link>
             </form>
         </div>
         <div className="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style a2a_follow" style={{ right: '0px', top: '390px', background: 'transparent' }}>
