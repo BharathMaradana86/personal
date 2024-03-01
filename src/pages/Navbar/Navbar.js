@@ -16,7 +16,7 @@ const Navbar=()=>{
                     <div className="menu-main">
                         <Link to='/'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'100px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>HOME</b></Button></Link>
                         <Link to='/services'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'100px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>SERVICES</b></Button></Link>
-                      <Link to='/About'> <Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>ABOUT US</b></Button></Link>
+                      <Link to='/about-us'> <Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>ABOUT US</b></Button></Link>
                         <Link to='/contact'><Button variant="outlined" className="menu-items" style={{marginRight:'20px',height:'40px',width:'130px',color:'#50B1BB',borderColor:'#50B1BB',fontSize:'larger'}}><b>CONTACT US</b></Button></Link>
                     </div>
 
@@ -36,7 +36,7 @@ const Navbar=()=>{
                 <div className={`dropDown ${menuOpen ? 'show' : ''}`} onClick={()=>setMenuOpen(false)} >
                     <Link to='/'><p>HOME</p></Link>
                     <Link to='/services'><p>SERVICES</p></Link>
-                    <Link to='/About'><p>ABOUT US</p></Link>
+                    <Link to='/about-us'><p>ABOUT US</p></Link>
                     <Link to='/contact'><p>CONTACT US</p></Link>
                 </div>
             </div>
