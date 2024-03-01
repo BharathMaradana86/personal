@@ -17,10 +17,10 @@ export default function App() {
           <Route path='/contact' element={<Contact />}/>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path='/About' element={<About/>}/>
+          <Route path='/about-us' element={<About/>}/>
           {/* <Route path='/Privacy-policy' element={<Privacy/>}/> */}
-          <Route path='/pp' element={<PP/>}/>
-          <Route path='/tc' element={<TC/>}/>
+          <Route path='/privacy-policy' element={<PP/>}/>
+          <Route path='/terms-and-conditions' element={<TC/>}/>
         </Routes>
     </div>
   )
